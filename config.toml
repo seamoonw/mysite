@@ -1,40 +1,58 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Ivy"
+# The title is better to be short
+title = "Stacey | 汪"
 theme = "hugo-ivy"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
+# Added three lines here:
+hasCJKLanguage= true
+enableEmoji= true
+rssLimit= 100
+
 
 [permalinks]
-    post = "/post/:year/:month/:day/:slug/"
-    note = "/note/:year/:month/:day/:slug/"
+    post = "/post/:year/:month/:slug/"
+    note = "/note/:year/:month/:slug/"
 
 [[menu.main]]
-    name = "Home"
+    name = "首页"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "About"
+    name = "关于"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Categories"
+    name = "分类"
     url = "/categories/"
     weight = 3
 [[menu.main]]
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     weight = 4
 [[menu.main]]
-    name = "Subscribe"
+    name = "订阅"
     url = "/index.xml"
 
 [params]
-    description = "A Hugo theme ported from the static site generator Ivy."
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    description = "如何用文字描述清楚问题是相当重要的"
+    footer = "&copy; [Stacey](https://stacey.netlify.app) 2020 | [Github](https://github.com/staceymoon)"
+    customJS = [
+    "js/fix-toc.js",
+    "js/center-img.js",
+    "js/right-quote.js",
+    "js/no-highlight.js",
+    "js/fix-footnote.js",
+    "js/math-code.js",
+    "js/external-link.js",
+    "js/alt-title.js",
+    "js/header-link.js"
+    ]
+    githubContentURL = "https://github.com/seamoonw/stacey_site/edit/master/content/"
 
   highlightjsVersion = "9.12.0"
   highlightjsCDN = "//cdn.bootcss.com"
