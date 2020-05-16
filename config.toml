@@ -40,7 +40,7 @@ rssLimit= 100
 
 [params]
     description = "如何用文字描述清楚问题是相当重要的"
-    footer = "&copy; [Stacey](https://stacey.netlify.app) 2020 | [Github](https://github.com/staceymoon)"
+    footer = "&copy; [Stacey](https://seamoon.netlify.app) 2020 | [Github](https://github.com/staceymoon)"
     customJS = [
     "js/fix-toc.js",
     "js/center-img.js",
